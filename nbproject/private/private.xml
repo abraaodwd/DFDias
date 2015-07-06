@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/laravel/resources/views/master.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Extensions/BladeExtensions.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/categoria/lista.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Http/Controllers/CategoriaController.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Providers/AppServiceProvider.php</file>
+            <file>file:/C:/wamp/www/laravel/bootstrap/autoload.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/menuadmin.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Http/routes.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Http/Controllers/ContatoController.php</file>
+            <file>file:/C:/wamp/www/laravel/config/mail.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Http/Controllers/AuthController.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/footer.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/config/app.php</file>
+            <file>file:/C:/wamp/www/laravel/app/Http/Controllers/BlogController.php</file>
+            <file>file:/C:/wamp/www/laravel/public/css/app.css</file>
+            <file>file:/C:/wamp/www/laravel/app/Providers/ViewServiceProvider.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/index.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/contato.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/categoria/editar.blade.php</file>
+            <file>file:/C:/wamp/www/laravel/resources/views/autores/cadastrar.blade.php</file>
+        </group>
+    </open-files>
+</project-private>

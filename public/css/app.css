@@ -1,0 +1,404 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/02/2015, 17:04:10
+    Author     : Diego
+*/
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url(fonts/SourceSansPro-ExtraLight.otf);
+}
+/*
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url(fonts/SourceSansPro-Bold.otf);
+    font-weight: bold;
+}*/
+
+body{
+    color: #666;
+    font-family: "Source Sans Pro";
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1;
+    color: #666;
+    margin: 0 0 1rem;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+blockquote{
+    border: 0;
+}
+
+blockquote p{
+    color: #000;
+    margin: 0;
+    font-size: 13px;
+    padding: 15px 0 15px 20px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 0;
+    border-left-width: 5px;
+    font-family: Georgia,Times,"Times New Roman",serif !important;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.row{
+    max-width: 80rem;
+}
+
+.center {
+    margin-left: 50%;
+    margin-right: 0;
+}
+
+#tudo {
+    min-height: 100%;
+    margin: 0 auto -10rem;
+}
+
+#conteudo, #tecnologias{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#conteudo article p{
+    margin-bottom: 0;
+}
+
+#header_servicos, #tecnologias .row:first-child div{
+    margin-bottom: 3rem;
+}
+
+#header_servicos::after, #sobre .row:first-child .columns:after, #tecnologias .row:first-child .columns:after {
+  background: rgba(144, 144, 144, 0.5) none repeat scroll 0 0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-top: 1.5em;
+  width: 6em;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.line-height-2{
+    line-height: 2;
+}
+
+.image.fit {
+  display: block;
+  margin: 0 0 2em;
+  width: 100%;
+}
+
+table caption{
+    background-color: #ddd;
+    padding: 0.5rem 0;
+}
+
+.burger{
+    font-size: 1rem;
+}
+
+#menu_principal section a{
+    font-weight: bold;
+}
+
+.name a img {
+  position: relative;
+  margin-right: 1rem; 
+}
+
+#tecnologias {
+    background-color: #fff;
+}
+
+#posts hr  {
+    max-width: 100%;
+}
+
+#container_carrossel{
+    width: 100%;
+    max-width: 100%;
+}
+
+.contain-to-grid{
+    background-color: #339EF5;
+}
+
+.contain-to-grid .top-bar{        
+    max-width: 115rem;
+}
+
+.top-bar.expanded .top-bar-section{
+    margin-top: 1rem;
+}
+
+.top-bar-section ul li > a{
+    height: 4rem;
+    padding-top: 0.5rem !important;
+}
+
+.top-bar.expanded {
+    height: auto !important;
+}
+
+.top-bar.expanded .top-bar-section ul li > a{
+    height: auto;
+}
+
+
+.top-bar .title-area, .top-bar-expanded .title-area, .contain-to-grid .top-bar{
+    height: 4rem;
+}
+
+.top-bar-section ul li{
+    background-color: #339EF5;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
+    border-right-color: #fff;
+}
+
+.top-bar.expanded .toggle-topbar a span::after {
+  box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+}
+
+/* Setinha abaixo dos itens selecionados do menu */
+/*.top-bar-section li:hover:not(.has-form) a:not(.button):after {
+    background-color: #37c0fb;              
+    bottom: -0.8rem;
+    content: "";
+    height: 0.75rem;
+    width: 0.75rem;
+    display: block;
+    left: 50%;
+    position: relative;  
+    transform: rotateZ(45deg); 
+}*/
+
+.push {
+    height: 10rem;
+}
+
+#carrossel{
+    width: 100%;
+    height: 500px;
+    background-image: url("/img/notebook_codigo.jpg");
+    background-size: cover;         
+}
+
+#carrossel h1{
+    color: #fff;
+}
+
+#sobre {
+    background-attachment: fixed, fixed;
+    background-image: url("/img/desenvolvimento_web_menor.jpg");
+    background-size: cover;    
+    color: #fff;
+}
+
+#sobre a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+#sobre .row, #carrossel .row{
+    max-width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.55);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+#sobre .row p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#sobre h2{
+    color: #fff;
+}
+
+#sobre .row .columns:after {
+    background: #fff;
+}
+
+#sobre .row:first-child .columns:after{
+    background: #fff;
+    margin-bottom: 2.5rem;
+}
+
+#rodape {
+    padding: 6rem 0;
+    background-color: #252525;
+    color: #999;
+    /*height: 10rem;*/
+    max-width: 100%;
+    padding-top: 1rem;
+    padding: 2.255rem 0;     
+}
+
+#rodape .row {
+    max-width: 100%;
+    
+}
+
+#rodape .fa-linkedin-square{
+    font-size: 2.5rem;
+}
+
+/*
+#nav_contato_rodape {
+    border-top: 2px solid #111; 
+    padding-top: 0.5rem;  
+    box-shadow: 0 1px 0 0 #333 inset;
+}*/
+
+.top-bar, .top-bar.expanded .title-area{
+    background-color: #339EF5;
+}
+
+.top-bar.expanded .toggle-topbar a{
+    color: #ffffff;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+    background-color: #339EF5;
+}
+
+table tr td{
+    font-size: 0.8em;
+}
+
+#blog_index article{
+    margin-bottom: 1rem; 
+    padding: 15px;
+}
+
+#blog_index #img_blog{
+    overflow: hidden;
+}
+
+#blog_post {
+    margin-bottom: 1rem;
+}
+
+.blog-sidebar-header{
+    height: 40px; 
+    background-color: #339ef5; 
+    color: #FFF; 
+    font-weight: bold; 
+    padding: 10px 0 0 10px;
+}
+
+.blog-sidebar-aside{
+  border: 1px solid #ccc;  padding: 10px 0 10px 10px;   
+}
+
+
+
+
+@media (min-width: 450px) {
+   
+
+    #sobre .row p, .small-block-grid-1, .small-block-grid-2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }       
+ 
+    
+}
+
+@media (min-width: 320px) and (max-width: 649px){
+
+     #rodape.row h1{
+        color: #999;
+        font-size: 1rem;
+    }   
+    
+    .medium-block-grid-3 h3{
+        font-size: 1.2rem;
+    }
+        
+    #blog_index #img_blog{
+        height: 200px;
+    }
+
+    #sobre .row p, .small-block-grid-1, .small-block-grid-2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }       
+    
+    
+    p{
+        font-size: 0.9rem;
+    }
+        
+}
+
+@media (max-width: 320px){
+    #blog_index h1{
+        font-size: 1.5rem;
+    }
+    #blog_index .subheader {
+        font-size: 1.2rem;
+    }
+    #blog_index p{
+        font-size: 0.8rem;
+    }  
+}
+
+
+@media (min-width: 650px){
+    
+    table tr td{
+        font-size: inherit;
+    }
+ 
+    #blog_index #img_blog{
+        height: 200px;
+    }
+    
+}
+
+
+
+/*
+This parent can be any width and height 
+#container_carrossel {
+  text-align: center;
+}
+
+ The ghost, nudged to maintain perfect centering 
+#container_carrossel:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;  Adjusts for spacing 
+}
+
+ The element to be centered, can
+   also be of any width and height  
+.carrossel {
+  display: inline-block !important;
+  vertical-align: middle;
+  width: 40rem;
+}*/
