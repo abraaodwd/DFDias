@@ -37,23 +37,23 @@ class LoginController extends Controller{
 
             return view('admin',['autores' => $autores]);
 	}
-        
+
         public function formCadastro(){
             return view('autores.cadastrar');
         }
-        
+
         public function logout(){
             Auth::logout();
             return redirect('/');
         }
-        
+
         public function edit($id){
             $autor = $this->autor->find($id);
             return view('autores.editar', ['autor' => $autor]);
         }
-        
+
         public function update(Request $request){
-            
+
             $this->validate($request, [
                 'nome'      => 'required|max:100',
                 'email'     => 'required|max:255|email',
@@ -62,19 +62,19 @@ class LoginController extends Controller{
                 'id_autor'  => 'required|integer|max:9999',
             ]);
 
-            $autor = $this->autor->find($request->input('id_autor'));   
+            $autor = $this->autor->find($request->input('id_autor'));
             $autor->update($request->only('nome', 'email', 'idade', 'sexo'));
-            
+
             return redirect('/login')->with('mensagem', 'Autor '.$request->input('nome'). ' alterado com sucesso');
-            
+
         }
-        
+
         public function destroy($id){
             $autor = $this->autor->find($id, ['nome']);
             $this->autor->destroy($id);
             return redirect('/login')->with('mensagem', 'Autor '.$autor->nome. ' removido com sucesso');;
         }
-        
+
         public function store(Request $request){
             $this->validate($request, [
                 'nome'      => 'required|max:100',
@@ -83,26 +83,27 @@ class LoginController extends Controller{
                 'senha'     => 'required',
                 'sexo'      => 'in:M,F',
             ]);
-                        
-            
+
+
             $autor = $this->autor;
-            
+
             $teste = $autor->all(['email'])->where('email', $request->input('email'));
 
-            if(!$teste->isEmpty()){                
-              return redirect('/cadastro')->with('mensagem', 'O e-mail informado já está cadastrado')->withInput($request->except('senha'));  
+            if(!$teste->isEmpty()){
+              return redirect('/cadastro')->with('mensagem', 'O e-mail informado já está cadastrado')->withInput($request->except('senha'));
             }
-                
-            
+
+
             $autor->nome  = $request->input('nome');
             $autor->email = $request->input('email');
             $autor->idade = $request->input('idade');
             $autor->sexo  = $request->input('sexo');
+            $autor->senha = $request->input('senha');
             $autor->save();
-  
-       
+
+
             return redirect('/cadastro')->with('mensagem', 'Autor '.$request->input('nome').' cadastrado com sucesso');
-            
+
         }
-      
+
 }

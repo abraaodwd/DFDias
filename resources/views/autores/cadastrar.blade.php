@@ -51,7 +51,7 @@
                         </div> <!-- /.row -->
 
                         <div class="row">
-                                <div class="large-4 medium-5 small-6 columns">
+                                <div class="large-5 medium-5 small-6 columns">
                                 <label>Sexo:
                                     <select name="sexo">
                                         <option value="M" {{old('sexo') == 'M' ? 'selected' : '' }}>Masculino</option>

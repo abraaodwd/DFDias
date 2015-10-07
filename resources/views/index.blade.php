@@ -56,7 +56,7 @@
             <h2><span class="fa fa-info-circle"></span> Sobre</h2>            
         </div>
         <p>
-           Sou desenvolvedor web autônomo e resido em São José dos Campos/SP. Sou bacharel em Sistemas de Informação pela PUC-RS e pós-graduado em Administração de Banco de Dados Oracle pela FIAP. Possuo cerca de 7 anos de experiência em desenvolvimento de sistemas, com foco em sistemas para web e trabalho principalmente com linguagens PHP 5, CSS, HTML5, JavaScript, jQuery, SQL e com o framework PHP Laravel 5 e o framework CSS Foundation For Sites. Tenho familiaridade com ambiente Linux, especialmente Debian e Ubuntu.
+           Me chamo Diego Figueiró Dias e sou desenvolvedor web há cerca de 7 anos. Possuo bacharelado em Sistemas de Informação pela PUCRS e pós-graduação em Administração de Banco de Dados Oracle pela FIAP. Meus principais interesses profissionais são bancos de dados, desenvolvimento de websites dinâmicos e desenvolvimento de sistemas para utilização em navegadores.
            <br /><br />
            Meu currículo completo pode ser visto no <a href="https://br.linkedin.com/in/diegofdias">meu perfil do Linkedin</a>. 
         </p>        

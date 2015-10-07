@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\Controller as BaseController;
 
+
 class IndexController extends BaseController {
 
 	/*
@@ -21,9 +22,22 @@ class IndexController extends BaseController {
 	 */
 	public function __construct()
 	{
-            //
+           /* $log = $this->createLog('C:\\teste.txt');
+            $log->send("First");
+            $log->send("Second");
+            $log->send("Third");*/
 	}
-                
+
+        private function createLog($file) {
+            $f = fopen($file, 'a');
+            
+            
+            while (true) {
+                $line = yield;
+                fwrite($f, $line);
+            }
+        }
+      
 
 	/**
 	 * Show the application welcome screen to the user.

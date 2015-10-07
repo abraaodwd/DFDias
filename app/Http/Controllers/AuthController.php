@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller {
 
     protected $request;
-    
+
     function __construct(Request $request) {
         $this->request = $request;
     }
@@ -17,26 +17,26 @@ class AuthController extends Controller {
      * Handle an authentication attempt.
      *
      * @return Response
-     */    
-    
+     */
+
     public function authenticate()
     {
         $this->validate($this->request, [
             'email' => 'required|max:255',
             'senha' => 'required',
         ]);
-        
+
         if (Auth::attempt(['email' => $this->request->input('email'), 'password' => $this->request->input('senha')]))
-        {  
+        {
             return redirect()->intended('login');
         } else {
             return redirect()->back()->withErrors(['Não foi possível autenticá-lo. Revise os dados informados.']);
         }
-         
+
     }
-    
+
     // Atualizações Laravel 5.1 - validator e create aqui
-    
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -65,11 +65,7 @@ class AuthController extends Controller {
                     'email' => $data['email'],
                     'password' => bcrypt($data['password']),
             ]);
-    }    
-    */
-    protected function formatValidationErrors(Validator $validator)
-    {
-        return $validator->errors()->all();
     }
+    */
 
 }

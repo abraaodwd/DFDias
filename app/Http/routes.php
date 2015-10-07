@@ -45,6 +45,7 @@ Route::get('destroy/{id_artigo}',                ['middleware' => 'autenticar', 
 Route::get('blog/lista',                         ['middleware' => 'autenticar', 'uses' => 'BlogController@lista']);
 Route::get('blog/index/{id_categoria}',           'BlogController@indexPorCategoria')->where(['id_categoria' => '[0-9]{1,2}']);
 Route::get('blog/index/{mes}/{ano}',              'BlogController@indexPorMesAno')->where(['mes' => '^(0?[1-9]|1[0-2])$', 'ano' => '20[0-9]{2}']);
+Route::get('blog/json',                           'BlogController@index_json');
 Route::post('blog/update',                       ['middleware' => 'autenticar', 'uses' => 'BlogController@update']);
 
 Route::resource('blog', 'BlogController', ['except' => ['destroy', 'update', 'edit']]);

@@ -147,6 +147,8 @@ return [
 		'App\Providers\RouteServiceProvider',
                 'App\Providers\ComposerServiceProvider',
                 'App\Providers\ViewServiceProvider',
+                'App\Providers\AuthServiceProvider', // Atualização Laravel 5.1.11
+                'Barryvdh\Cors\ServiceProvider',
 
 	],
 
@@ -195,6 +197,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+                'Gate'      => Illuminate\Support\Facades\Gate::class,
 
 	],
 

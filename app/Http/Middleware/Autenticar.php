@@ -20,7 +20,7 @@ class Autenticar {
 	 */
 	public function __construct(Guard $auth)
 	{
-		$this->auth = $auth;
+            $this->auth = $auth;
 	}
 
 	/**
@@ -33,13 +33,13 @@ class Autenticar {
 	public function handle($request, Closure $next)
 	{
             if ($this->auth->guest()) // Se funcionário não está autenticado...
-            { 
+            {
                     if ($request->ajax()) // Se for requisição AJAX, responde erro.
                     {
                             return response('Unauthorized.', 401);
                     }
                     else // Senão redireciona para formulário de login
-                    {      
+                    {
                             return redirect()->guest('auth/login');
                     }
 

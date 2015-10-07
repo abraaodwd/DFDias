@@ -5,7 +5,7 @@
 <script type="text/javascript" src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
 <script type="text/javascript">
     $(function(){
-        var roxyFileman = '{{asset("js/fileman/index.html")}}';   
+        var roxyFileman = '{{asset("js/fileman/index.html")}}';
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
         CKEDITOR.replace( 'texto', {filebrowserBrowseUrl:roxyFileman,
@@ -60,7 +60,7 @@ tinymce.init({
                 <input type="hidden" name="id_autor" value="{{ $artigo->id_autor }}" />
                 <input type="hidden" name="id_artigo" value="{{ $artigo->id_artigo }}" />
                 <fieldset>
-                    <legend>Novo post</legend>
+                    <legend>Alterar Artigo</legend>
 
                     <label for="titulo">Título</label>
                     <input type="text" name="titulo" id="titulo" value="{{ $artigo->titulo }}" />
@@ -76,15 +76,16 @@ tinymce.init({
                     </select>
 
                     <label for="img_capa">Imagem de Capa</label>
-                    <input type="file" name="img_capa" id="img_capa" />                
+                    <input type="file" name="img_capa" id="img_capa" />
 
                     <textarea name="texto" id="texto">{{ $artigo->texto }}</textarea>
 
-                    <input type="submit" value="Salvar" class="button tiny" />
+                        <input type="submit" value="Salvar" class="button tiny" />
+
                 </fieldset>
             </form>
 
         </div>
     </div>
-</section>    
+</section>
 @endsection

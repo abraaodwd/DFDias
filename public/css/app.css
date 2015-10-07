@@ -60,8 +60,8 @@ blockquote p{
 }
 
 .center {
-    margin-left: 50%;
-    margin-right: 0;
+    display: table;
+    margin: 0 auto;
 }
 
 #tudo {
@@ -72,6 +72,10 @@ blockquote p{
 #conteudo, #tecnologias{
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+#conteudo table{
+    width: 100%;
 }
 
 #conteudo article p{
@@ -309,10 +313,12 @@ table tr td{
 }
 
 .blog-sidebar-aside{
-  border: 1px solid #ccc;  padding: 10px 0 10px 10px;   
+  border: 1px solid #ccc;  padding: 10px 0 10px 10px;
 }
 
-
+#cke_texto{
+    margin-bottom: 1rem;
+}
 
 
 @media (min-width: 450px) {
@@ -375,7 +381,7 @@ table tr td{
     #blog_index #img_blog{
         height: 200px;
     }
-    
+
 }
 
 
