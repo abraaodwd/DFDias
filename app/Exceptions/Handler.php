@@ -24,9 +24,7 @@ class Handler extends ExceptionHandler {
 	 */
 	public function report(Exception $e)
 	{
-               /* if($e instanceof \PDOException){
-                    die($e->getCode(). " :" .$e->getMessage());
-                }*/
+                \Log::error($e);
 		return parent::report($e);
 	}
 
