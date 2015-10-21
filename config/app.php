@@ -149,7 +149,7 @@ return [
                 'App\Providers\ViewServiceProvider',
                 'App\Providers\AuthServiceProvider', // Atualização Laravel 5.1.11
                 'Barryvdh\Cors\ServiceProvider',
-
+                'Jenssegers\Rollbar\RollbarServiceProvider',
 	],
 
 	/*
